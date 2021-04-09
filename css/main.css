@@ -3,6 +3,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .headings {
   text-transform: uppercase;
@@ -156,6 +157,9 @@ ul li a:hover {
 }
 /* experiance end */
 /* <!-- start service offers --> */
+.parent-service{
+  margin-bottom: 75px;
+}
 .parent-service .container {
   text-align: center;
 
@@ -245,7 +249,7 @@ ul li a:hover {
 /* <!--    animated protfolio end--> */
 /* <!-- Authors start --> */
 .parent-authors{
-  margin: 150px auto;
+  margin: 50px auto;
 }
 .parent-authors .container{
   display: flex;
@@ -301,7 +305,72 @@ ul li a:hover {
 /* <!-- dots bulets end  --> */
 
 /* <!-- purpule banner start --> */
+.purple-banner{
+  margin:150px auto;
+}
+.purple-banner .container > *{
+  color: white;
+  
+}
+.purple-banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#854fe3;
+  height: 425px;
+  background-image: url("../images/home-banner.png");
+}
+.purple-banner .container h2{
+  text-transform: uppercase;
+  margin: 12px auto;
+}
+.purple-banner .container p{
+  margin: 10px auto;
+}
+#email{
+  background-color: transparent;
+  border-radius: 3px;
+  height: 36px;
+  border: 1px solid white;
+  width: 334px;
+  margin-right:15px;
+}
+#email::placeholder{
+  color:white;
+  padding-left: 10px
+}
+#email::-moz-placeholder{
+  color:white;
+  opacity: 1;
+  padding-left: 10px
+}
+.purple-banner .container .email-container{
+  width: auto;
+  margin-top: 29px;
+}
+.purple-banner .container .btn{
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  height: 100%;
+  box-shadow: 4px 6px 28px -7px #898491;
+  border-radius: 4px;
+  width: auto;
+  font-size: 13px;
+  padding: 12px 32px;
+  font-weight: 700;
+}
 /* <!-- purpule banner end --> */
+/* <!-- footer start --> */
+footer .container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin-top:-45px;
+}
+/* <!-- footer end --> */
 /* buttons start */
 .btn{
   padding: 12px;
