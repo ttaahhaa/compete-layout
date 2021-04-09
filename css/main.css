@@ -160,6 +160,10 @@ ul li a:hover {
   text-align: center;
 
 }
+.parent-service .container h2{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
 .parent-service .container p {
   margin: 0 180px;
 }
@@ -204,26 +208,100 @@ ul li a:hover {
 /* <!-- qulity work end --> */
 /* <!-- filtering bar start --> */
 .parent-filtering .container{
-  width: 47%;
-  margin-left: 3%;
+  width: 1170x;
+  
 }
-.parent-filtering .container ul{
+.parent-filtering .container .nested-container{
+    width: 50%;
+}
+.parent-filtering .container .nested-container ul{
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-
+  padding-left:0; 
 }
-.parent-filtering .container ul li{
+.nested-container
+.parent-filtering .container .nested-container ul li{
   text-transform: uppercase;
-  width:auto;
+  
 
 }
-.parent-filtering .container ul li a{
+.parent-filtering .container .nested-container ul li a{
   font-weight: normal;
 }
 /* <!-- filtering bar end --> */
+/* <!--    animated protfolio start--> */
+.parent-protfloio-galary{
+  margin-top:50px;
+  margin-bottom:180px;
+}
+.parent-protfloio-galary .container {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+}
+/* <!--    animated protfolio end--> */
+/* <!-- Authors start --> */
+.parent-authors{
+  margin: 150px auto;
+}
+.parent-authors .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+}
+.parent-authors .container .first-author,
+ .parent-authors .container .second-author{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  width: calc(100% / 2 - 10px);
+  box-shadow: 4px 6px 28px -7px #898491;
+
+  
+}
+.parent-authors .container .first-author img,
+ .parent-authors .container .second-author img{
+   grid-row: span 3;
+   width:100%;
+ }
+ .parent-authors .container .first-author h3,
+ .parent-authors .container .second-author h3{
+   text-transform: uppercase;
+   padding-left:10px;
+
+ }
+ .parent-authors .container .first-author p,
+ .parent-authors .container .second-author p{
+   color: #E1E1E1;
+   padding: 10px;
+   
+ }
+/* <!-- Authors end --> */
+/* <!-- dots bulets start  --> */
+.parents-pages-dots .container{
+  display:flex;
+  justify-content: center;
+  
+}
+.parents-pages-dots .container span{
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: auto 7px;
+}
+.parents-pages-dots .container span:nth-child(2){
+  background-color:#854fe3;
+}
+/* <!-- dots bulets end  --> */
+
+/* <!-- purpule banner start --> */
+/* <!-- purpule banner end --> */
 /* buttons start */
 .btn{
   padding: 12px;
