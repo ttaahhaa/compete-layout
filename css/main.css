@@ -1,4 +1,31 @@
-/*start global selectors */
+/* Table of contents */
+/*
+1. Global selectors
+2. nav bar
+3. title section
+4. introduce section
+5. experiance section
+6. service offers section
+7. front-end skills section
+8. qulity work section
+9. filtering bar section
+10. animated protfolio section
+11. Authors section
+12. dots bulets
+13. purpule banner section
+14. footer section
+15. All buttons
+16. Responsive - small screens (up to 991)
+  16.1 drop down list
+17. Responsive - Medium screens (992 - 1199)
+18. Responsive - Large screens (1200 or more)
+*/
+
+
+/*--------------------------------------------------------------
+  1. start global selectors
+--------------------------------------------------------------*/
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -12,8 +39,6 @@
   color: black;
   
 }
-/* end global selectors */
-
 .header {
   color: black;
   font-weight: bold;
@@ -38,7 +63,11 @@
   height: 50px;
   background-color: white;
 }
-/* ----------nav bar start--------- */
+
+/*--------------------------------------------------------------
+  2. nav bar start
+--------------------------------------------------------------*/
+
 .nav-links {
   margin-right: 30px;
   display: none;
@@ -62,8 +91,10 @@ ul li a:hover {
 #menu-icon {
   display: none;
 }
-/* ----------nav bar end--------- */
-/*title start*/
+/*--------------------------------------------------------------
+  3. title section starts
+--------------------------------------------------------------*/
+
 .parent-title {
   margin-top: 30px;
 }
@@ -80,13 +111,15 @@ ul li a:hover {
   width: 550px;
   height: 338px;
 }
-/*title end*/
-/* introduce start */
+/*--------------------------------------------------------------
+  4. introduce section starts
+--------------------------------------------------------------*/
 #introduce-paragraph{
   width: 22em;
 }
-/* introduce end */
-/* experiance start */
+/*--------------------------------------------------------------
+  5. experiance section starts
+--------------------------------------------------------------*/
 .parent-experiance .container {
   flex-direction: row;
   
@@ -138,9 +171,6 @@ ul li a:hover {
   left: -13px;
 }
 
-.parent-experiance .container .yearsAndContactUs .experianceDiv{
-  /* position: relative; */
-}
 
 #ten{
   font-size: 68px;
@@ -160,8 +190,10 @@ ul li a:hover {
 .ten-parent-div{
   position: relative;
 }
-/* experiance end */
-/* <!-- start service offers --> */
+/*--------------------------------------------------------------
+  6. service offers section starts
+--------------------------------------------------------------*/
+
 .parent-service{
   margin-bottom: 75px;
 }
@@ -178,9 +210,10 @@ ul li a:hover {
   margin: 0 180px;
     font-size: 18px;
 }
-/* <!-- end service offers --> */
+/*--------------------------------------------------------------
+  7. front-end skills section starts
+--------------------------------------------------------------*/
 
-/* <!-- front-end skills start --> */
 .parent-front-end-skills .container {
   display: flex;
   justify-content: space-between;
@@ -203,24 +236,26 @@ ul li a:hover {
 .parent-front-end-skills .container div img{
   width: 113px;
   height: 88px;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   margin: 0 auto;
 }
 .parent-front-end-skills .container div h4{
   text-transform: uppercase;
 
 }
-/* <!-- front-end skills end --> */
-/* <!-- qulity work start --> */
+/*--------------------------------------------------------------
+  8. qulity work section starts
+--------------------------------------------------------------*/
+
 .parent-quality-wrok{
     margin: 150px auto;
 }
 .parent-quality-wrok .container h1{
   font-size:48px;
   }
-/* <!-- qulity work end --> */
-/* <!-- filtering bar start --> */
+/*--------------------------------------------------------------
+  9. filtering bar section starts
+--------------------------------------------------------------*/
+
 .parent-filtering .container{
   width: 1170x;
   
@@ -245,8 +280,10 @@ ul li a:hover {
 .parent-filtering .container .nested-container ul li a{
   font-weight: normal;
 }
-/* <!-- filtering bar end --> */
-/* <!--    animated protfolio start--> */
+/*--------------------------------------------------------------
+  10. animated protfolio section starts
+--------------------------------------------------------------*/
+
 .parent-protfloio-galary{
   margin-top:50px;
   margin-bottom:180px;
@@ -256,8 +293,10 @@ ul li a:hover {
   justify-content:space-between;
   flex-direction: row;
 }
-/* <!--    animated protfolio end--> */
-/* <!-- Authors start --> */
+/*--------------------------------------------------------------
+  11. Authors section starts
+--------------------------------------------------------------*/
+
 .parent-authors{
   margin: 50px auto;
 }
@@ -295,8 +334,10 @@ ul li a:hover {
    padding: 10px;
    
  }
-/* <!-- Authors end --> */
-/* <!-- dots bulets start  --> */
+/*--------------------------------------------------------------
+  12. dots bulets starts
+--------------------------------------------------------------*/
+
 .parents-pages-dots .container{
   display:flex;
   justify-content: center;
@@ -312,9 +353,10 @@ ul li a:hover {
 .parents-pages-dots .container span:nth-child(2){
   background-color:#854fe3;
 }
-/* <!-- dots bulets end  --> */
+/*--------------------------------------------------------------
+  13. purpule banner section starts
+--------------------------------------------------------------*/
 
-/* <!-- purpule banner start --> */
 .purple-banner{
   margin:150px auto;
 }
@@ -371,8 +413,10 @@ ul li a:hover {
   padding: 12px 32px;
   font-weight: 700;
 }
-/* <!-- purpule banner end --> */
-/* <!-- footer start --> */
+/*--------------------------------------------------------------
+  14. footer section starts
+--------------------------------------------------------------*/
+
 footer{
     margin:50px auto;
 }
@@ -383,8 +427,10 @@ footer .container{
   flex-direction:column;
   margin-top:-45px;
 }
-/* <!-- footer end --> */
-/* buttons start */
+/*--------------------------------------------------------------
+  15. All buttons starts
+--------------------------------------------------------------*/
+
 .btn{
   padding: 12px;
   width: 135px;
@@ -409,11 +455,10 @@ footer .container{
   display: none;
   
 }
+/*--------------------------------------------------------------
+  16. Responsive - small screens (up to 991)
+--------------------------------------------------------------*/
 
-
-/* buttons end */
-/* small */
-/* up to 991 */
 @media (max-width: 991px) {
   .super{
     display: block;
@@ -454,8 +499,6 @@ overflow: auto;
     box-shadow: 4px 6px 28px -7px #854fe3;
     border: none;
     padding: 7px;
-    /* margin-right: 20px; */
-    /* margin-top: 15px; */
 }
 
   .nav-links ul li a{
@@ -487,8 +530,6 @@ overflow: auto;
   
 }
 
-.parent-service .container{
-}
 .parent-front-end-skills .container div {
   width: calc(100% / 2 - 11px);
 }
@@ -498,14 +539,12 @@ overflow: auto;
 .parent-quality-wrok {
   margin: initial;
 }
-.parent-quality-wrok .container{
-}
+
 .parent-quality-wrok .container h1 {
   font-size: 35px;
 }
 
-.parent-filtering .container{
-}
+
 .parent-filtering .container .nested-container ul {
   flex-wrap: wrap;
   justify-content: center;
@@ -566,7 +605,7 @@ text-align: center;
   margin-bottom: 10px;
 }
 
-/* drop down list start */
+/* 16.1 ----------drop down list start----------- */
 #menu-icon:hover .nav-links-small{
   display: inline-flex;
   color:red;
@@ -596,12 +635,12 @@ text-align: center;
 .nav-links-small ul li{
   list-style-type: none;
   padding-bottom: 15px;
-  /* border-top: 1px solid #444; */
+
 }
 .nav-links-small ul li a{
 width:100%;
 display:block;
-  /* border-top: 1px solid #444; */
+
 }
 .nav-links-small ul li:not(:last-child) a{
   border-bottom: 1px solid #444;
@@ -625,11 +664,12 @@ transition: 0.3s;
   z-index: 1100;
 }
 
-/* drop down lisr end */
+/* ------------drop down lisr end----------- */
 
 }
-/* Medium */
-/* 992 - 1199 */
+/*--------------------------------------------------------------
+  17. Responsive - Medium screens (992 - 1199)
+--------------------------------------------------------------*/
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -642,16 +682,18 @@ transition: 0.3s;
   #menu-icon {
     display: none;
   }
+  /* just for test the responsive 
   .nav-links ul li a{
     color:green;
-  }
+  } */
   .parent-title .container img, .parent-introduce img  {
     width: 458px;
     height: 329px;
   }
 }
-/* Large */
-/* 1200 or more */
+/*--------------------------------------------------------------
+  18. Responsive - Large screens (1200 or more)
+--------------------------------------------------------------*/
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -664,9 +706,10 @@ transition: 0.3s;
   #menu-icon {
     display: none;
   }
+  /* just for test the responsive 
   .nav-links ul li a{
     color:red;
-  }
+  }*/
   .parent-title .container img, .parent-introduce img  {
     width: 550px;
     height: 338px;
